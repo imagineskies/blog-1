@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Welcome to my blog.">
+  <meta name="author" content="Rayna Weeden">
+  <meta name="keywords" content="blogs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../img/background.jpg">
+
+  <title>Poems</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <!-- Style Css -->
+  <link href="../css/main.css" rel="stylesheet">
+  <!-- Font/icon List -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav id="menuTemp" class="navbar navbar-expand-xl navbar-togglable fixed-top">
+    <div class="container">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Heading -->
+        <ul class="nav navbar-nav mr-auto custom-navbar">
+          <li class="navbar navbar-light">
+            <span class="navbar-brand">Random Title</span>
+          </li>
+        </ul>
+
+        <!-- Links -->
+        <ul class="nav navbar-nav ml-auto custom-navbar">
+
+          <li class="nav-item-divider">
+            <span class="nav-link">
+              <span></span>
+            </span>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="OpenPoemsNav()">
+              Poems
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Music
+            </a>
+          </li>
+
+          <!-- Nav Divider -->
+
+          <li class="nav-item-divider">
+            <span class="nav-link">
+              <span></span>
+            </span>
+          </li>
+
+        </ul>
+
+      </div> <!-- / .navbar-collapse -->
+
+    </div> <!-- / .container -->
+  </nav>
+
+  <header class="masthead">
+    <div class="container">
+      <div class="row">
+        <div id="textOne" class="hidden col-lg-10 mx-auto textbox">
+          <h2>Poems</h2>
+          <p>I wrote all of these. Some older than others, but they're tought. They talk about sensitive topics and could be triggering for some. Take care of yourselves.</p>
+          <p>To switch poems just click the button down below or on the navbar.</p>
+        </div>
+        <div id="textTwo" class="col-lg-10 mx-auto textbox">
+          <h2>Please Wait...The page is loading.</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="content">
+    <div id="wrapperPoems">
+
+      <div id="mainPoemsMenuM">
+        <div id="mainPoemsContentM">
+          <div class="btn" onclick="exitPoemsMenu()">
+            &otimes;
+          </div>
+          <div id="buttonFear" class="btn " onclick="onFear()">
+            Lorem Ipsum
+          </div>
+          <div id="buttonForgoten" class="btn " onclick="onForgoten()">
+            Vestibulum
+          </div>
+          <div id="buttonGrief" class="btn " onclick="onGrief()">
+            Curabitur
+          </div>
+          <div id="buttonALife" class="btn " onclick="onALife()">
+            Aliquam Vitae
+          </div>
+          <div id="buttonSchool" class="btn " onclick="onSchool()">
+            Morbi Tristique
+          </div>
+          <div id="buttonWork" class="btn " onclick="onWork()">
+            Donec Vitae
+          </div>
+          <div id="buttonMe" class="btn " onclick="onMe()">
+            Quisque Egestas
+          </div>
+          <div id="buttonSomeone" class="btn " onclick="onSomeone()">
+            Phasellus Vitae
+          </div>
+          <div id="buttonMalnourished" class="btn active" onclick="onMalnourished()">
+            Nulla Facilisi
+          </div>
+          <div id="buttonThingsToPainful" class="btn " onclick="onThingsToPainful()">
+            Etiam Faucibus
+          </div>
+          <div id="buttonDearFutureSelf" class="btn " onclick="onDearFutureSelf()">
+            Fusce Quam
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div id="buttonOpenPoemsNav" class="col-6 mx-auto" onclick="OpenPoemsNav()"><i class="fas fa-book-open"></i> Poems</div>
+        </div>
+      </div>
+
+      <section id="mainPoems">
+
+        <article id="mainPoemsBody">
+          <div id="sectionFear" class=" fear hidden">
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+            </p>
+            <p>
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+            <p>
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+            <p>
+              Donec rutrum congue leo eget malesuada.<br />
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<br />
+              Nulla quis lorem ut libero malesuada feugiat.<br />
+              Vivamus suscipit tortor eget felis porttitor volutpat.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+          </div>
+          <div id="sectionForgoten" class=" forgoten hidden">
+            <h3>Vestibulum</h3>
+            <p>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;<br />
+              Integer ac sem nec urna cursus dictum.<br />
+              Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisi nec erat.<br />
+              Suspendisse potenti.<br />
+              Proin ac neque nec nisi cursus dictum.<br />
+              Nullam ac urna eu felis dapibus condimentum sit amet a augue.<br />
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+          </div>
+          <div id="sectionGrief" class=" forgot hidden">
+            <h3>Curabitur</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+            </p>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+            </p>
+            <p>
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+            <p>
+              Donec rutrum congue leo eget malesuada.<br />
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<br />
+              Nulla quis lorem ut libero malesuada feugiat.<br />
+              Vivamus suscipit tortor eget felis porttitor volutpat.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+          </div>
+          <div id="sectionALife" class=" me hidden">
+            <h3>Aliquam Vitae</h3>
+            <p>
+              Aliquam vitae sapien nec sapien cursus dictum.<br />
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+          </div>
+          <div id="sectionSchool" class=" school hidden">
+            <h3>Morbi Tristique</h3>
+            <p>
+              Morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+          </div>
+          <div id="sectionWork" class=" work hidden">
+            <h3>Donec Vitae</h3>
+            <p>
+              Donec vitae sapien ut libero venenatis faucibus.<br />
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+            </p>
+            <p>
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+            <p>
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+            <p>
+              Donec rutrum congue leo eget malesuada.<br />
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<br />
+              Nulla quis lorem ut libero malesuada feugiat.<br />
+              Vivamus suscipit tortor eget felis porttitor volutpat.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+            </p>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+          </div>
+          <div id="sectionMe" class=" me hidden">
+            <h3>Quisque Egestas</h3>
+            <p>
+              Quisque egestas diam in arcu cursus euismod quis viverra nibh.<br />
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+          </div>
+          <div id="sectionSomeone" class=" thinking hidden">
+            <h3>Phasellus Vitae</h3>
+            <p>
+              Phasellus vitae semper nulla.<br />
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+            </p>
+            <p>
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+            </p>
+            <p>
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+            <p>
+              Donec rutrum congue leo eget malesuada.<br />
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<br />
+              Nulla quis lorem ut libero malesuada feugiat.<br />
+              Vivamus suscipit tortor eget felis porttitor volutpat.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+            </p>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+            <p>
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+            </p>
+            <p>
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+            </p>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+            <p>
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+            </p>
+            <p>
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+            </p>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+          </div>
+          <div id="sectionMalnourished" class=" malnourished ">
+            <h3>Nulla Facilisi</h3>
+            <p>
+              Nulla facilisi.<br>
+              Pellentesque habitant morbi tristique senectus et netus.<br>
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br>
+              Proin eget tortor risus.<br>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br>
+              Vestibulum ac diam sit amet quam vehicula elementum.<br>
+              Donec sollicitudin molestie malesuada.<br>
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br>
+              Nulla porttitor accumsan tincidunt.<br>
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br>
+              Pellentesque in ipsum id orci porta dapibus.<br>
+              Proin eget tortor risus.<br>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br>
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br>
+              Donec sollicitudin molestie malesuada.<br>
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br>
+            </p>
+                <div id="rating-system" class="rating-system  col-md-5 mx-auto">
+                  <a id="star1">
+                    <i class="far fa-star "></i>
+                    <i class="fas fa-star "></i>
+                  </a>
+                  <a id="star2">
+                    <i class="far fa-star "></i>
+                    <i class="fas fa-star "></i>
+                  </a>
+                  <a id="star3">
+                    <i class="far fa-star "></i>
+                    <i class="fas fa-star "></i>
+                  </a>
+                  <a id="star4">
+                    <i class="far fa-star "></i>
+                    <i class="fas fa-star "></i>
+                  </a>
+                  <a id="star5">
+                    <i class="far fa-star "></i>
+                    <i class="fas fa-star "></i>
+                  </a>
+                </div>
+          </div>
+          <div id="sectionThingsToPainful" class=" thingstopainful hidden">
+            <h3>Etiam Faucibus</h3>
+            <p>
+              Etiam faucibus cursus urna.<br />
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+          </div>
+          <div id="sectionDearFutureSelf" class=" dearfutureself hidden">
+            <h3>Fusce Quam</h3>
+            <p>
+              Fusce quam tellus, sodales ac, feugiat non, pretium quis, lectus.<br />
+              Pellentesque habitant morbi tristique senectus et netus.<br />
+              Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum.<br />
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+            </p>
+            <p>
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+              Pellentesque in ipsum id orci porta dapibus.<br />
+              Proin eget tortor risus.<br />
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br />
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.<br />
+            </p>
+            <p>
+              Donec sollicitudin molestie malesuada.<br />
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+              Nulla porttitor accumsan tincidunt.<br />
+              Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.<br />
+            </p>
+          </div>
+        </article>
+      </section>
+
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../js/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/ratingsystem.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!--
+  <script>
+    $(document).ready(function() {
+      var screenwidth = $(window).width();
+      if (screenwidth > 720) {
+        window.location.href = 'poems.html';
+      }
+    })
+  </script>
+  -->
+
+</body>
+
+</html>
